@@ -9,13 +9,15 @@ public class Task4 {
         System.out.println("Enter a word: ");
          input = scanner.nextLine();
 
-        StringBuilder reverseInput = new StringBuilder(input).reverse();
+        StringBuilder reverseWord = new StringBuilder(input).reverse();
 
-        if(reverseInput.toString().equals(input))
-            System.out.println("The input string is a palindrome");
-        else
-            System.out.println("The input string is not a palindrome");
-
+        System.out.println( (reverseWord.toString().equals(input)) 
+        ? "The input string is a palindrome"
+        : "The input string is not a palindrome"
+    );
+            
+        
+           
         
 
 
