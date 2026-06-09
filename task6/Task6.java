@@ -1,7 +1,6 @@
-<<<<<<< HEAD
-package task6;
 
-public class Task7 {
+
+public class Task6 {
   public static void main(String[] args) {
     int[] numbers = { 951, 402, 984, 651, 360, 69, 408, 319, 601, 485, 980, 507, 725, 547, 544,
         615, 83, 165, 141, 501, 263, 617, 865, 575, 219, 390, 984, 592, 236, 105, 942, 941,
@@ -21,43 +20,4 @@ public class Task7 {
 
     }
   }
-=======
-public class Task6 {
-
-    public static void main(String[] args) {
-        ArithmeticOperations operations = new ArithmeticOperations(10, 5);
-        
-
-        System.out.println(operations.getSum());
-        System.out.println(operations.getMinus());
-        System.out.println(operations.getMultiplication());
-        System.out.println(operations.getDivision());
-    }
-
-    private static class ArithmeticOperations {
-        private int num1;
-        private int num2;
-
-        public ArithmeticOperations(int num1, int num2) {
-            this.num1 = num1;
-            this.num2 = num2;
-        }
-
-        private int getSum() {
-            return num1 + num2;
-        }
-
-        private int getMinus() {
-            return num1 - num2;
-        }
-
-        private int getMultiplication() {
-            return num1 * num2;
-        }
-
-        private int getDivision() {
-            return num1 / num2;
-        }
-    }
->>>>>>> e0faeb0 (feat: modify task5 and add task6)
 }
