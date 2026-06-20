@@ -1,6 +1,9 @@
 package task3;
 
 public class Task3 {
+  
+
+  public static void main(String[] args) {
   String a = "Wow"; //changed the new Object String instance to string literal to store on String pool;
   String b = "Wow"; //String intern pool
   String c = a + "!"; // Heap object "Wow" then concatenate "!";
@@ -10,10 +13,9 @@ public class Task3 {
   boolean b2 = d.equals(b + "!"); // object "Wow" compared to String pool "Wow" but equals() method compares the content not the type -> now true;
   boolean b3 = !c.equals(a); // object "Wow" compared to object "Wow" -> concatenated "!" -> now true;
 
-  public static void main(String[] args) {
     Task3 t = new Task3();
 
-    if(t.b1&&t.b2&&t.b3) {
+    if(b1&&b2&&b3) {
       System.out.println("Success!");
     }
     
